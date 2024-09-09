@@ -1,0 +1,31 @@
+{
+  "name": "database-sqlite",
+  "version": "0.1.0",
+  "description": "Diplomski rad",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "node esbuild.js && pnpm cp-to-backend",
+    "dev": "nodemon",
+    "start": "pnpm build && node build/index.js",
+    "cp-to-backend": "pnpx ncp ./build ../backend/plugins/database/sqlite/build"
+  },
+  "keywords": [],
+  "author": "Domagoj Mutić <domagojmutic@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "better-sqlite3": "^11.1.2",
+    "lodash": "^4.17.21",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.11.24",
+    "@types/lodash": "^4.17.7",
+    "esbuild": "^0.23.0",
+    "ncp": "^2.0.0",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

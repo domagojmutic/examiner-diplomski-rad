@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script type="module">
+            import cv from "@techstark/opencv-js";
+            export const cvLoaded = new Promise((resolve) => {
+                cv.onRuntimeInitialized = () => {
+                    const doneIndicator = document.createElement("div");
+                    doneIndicator.id = "done";
+                    document.body.appendChild(doneIndicator);
+                    window.cv = cv
+                    resolve(true);
+                };
+            });
+        </script>
+    </body>
+</html>

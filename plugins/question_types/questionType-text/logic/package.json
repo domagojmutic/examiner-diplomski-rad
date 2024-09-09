@@ -1,0 +1,17 @@
+{
+  "name": "logic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.5.2",
+    "esbuild": "^0.23.1",
+    "typescript": "^5.5.4"
+  }
+}

@@ -1,0 +1,1 @@
+{ "include": ["src"], "ext": "ts,mts", "exec": "node esbuild.js dev && node dist/app.js" }

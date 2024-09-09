@@ -1,0 +1,21 @@
+@import './base.css';
+
+#app {
+  width: 21cm;
+  max-width: 21cm;
+  min-width: 21cm;
+
+  margin: 0 auto;
+  padding: 1cm;
+  font-weight: normal;
+
+  overflow-x: hidden;
+}
+@media print {
+  #app {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 26px;
+  }
+}
